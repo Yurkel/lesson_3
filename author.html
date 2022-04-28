@@ -18,10 +18,19 @@
       href="search.html">Поиск</a>
   </nav>
 
-  <form action="https://tests.fomenko.top/echo/index.php" method="get">
-    <input type="text">
-    <input type="submit">
-  </form>
+  <fieldset>
+    <legend>Введите логин и пароль</legend>
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+      <input type="text" name="lgn" placeholder="Логин">
+      <input type="email" name="email" placeholder="email">
+      <input type="password" name="psw" placeholder="Пароль">
+      <div>
+        <input type="submit" value="Тачки уже тут">
+        <button type="reset">Что-то не так</button>
+        <button type="button">Пароль тут</button>
+      </div>
+    </form>
+  </fieldset>
 
 </body>
 
