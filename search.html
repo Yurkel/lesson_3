@@ -18,14 +18,126 @@
     <a href="">Поиск</a>
   </nav>
 
+  <fieldset>
+    <legend>Тип кузова и марка авто</legend>
+
+    <div>
+      <label for="">Тип кузова</label>
+      <select name="name" id="name">
+        <option disabled selected value="0">Тип кузова</option>
+        <option value="1">Микро</option>
+        <option value="2">Хечбек</option>
+        <option value="3">Седан</option>
+        <option value="4">Универсал</option>
+        <option value="5">Внедорожник</option>
+        <option value="6">Кабриолет</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="">Марка</label>
+      <select name="name" id="name">
+        <option disabled selected value="0">Марка</option>
+        <option value="1">Audi</option>
+        <option value="2">VW</option>
+        <option value="3">Mercedes</option>
+        <option value="4">Fiat</option>
+        <option value="5">Skoda</option>
+        <option value="6">ЗАЗ</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Страна производитель</legend>
+    <div>
+      <input type="checkbox" id="EU" name="EU" checked>
+      <label for="EU">EU</label>
+    </div>
+    <div>
+      <input type="checkbox" id="USA" name="USA" checked>
+      <label for="USA">USA</label>
+    </div>
+    <div>
+      <input type="checkbox" id="UA" name="UA" checked>
+      <label for="UA">UA</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Цена</legend>
+
+    <div>
+      <label for="">Цена от</label>
+      <select name="name" id="name">
+        <option disabled selected value="0">Цена от</option>
+        <option value="1">от 1000 euro</option>
+        <option value="2">от 2000 euro</option>
+        <option value="3">от 3000 euro</option>
+        <option value="4">от 4000 euro</option>
+        <option value="5">от 5000 euro</option>
+        <option value="6">от 6000 euro</option>
+      </select>
+
+      <label for="">Цена до</label>
+      <select name="name" id="name">
+        <option disabled selected value="0">Цена до</option>
+        <option value="7">до 2000 euro</option>
+        <option value="8">до 3000 euro</option>
+        <option value="9">до 4000 euro</option>
+        <option value="10">до 5000 euro</option>
+        <option value="11">до 6000 euro</option>
+        <option value="12">до 7000 euro</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Год выпуска</legend>
+
+    <div>
+      <label for="">Год от</label>
+      <select name="name" id="name">
+        <option disabled selected value="0">Год от</option>
+        <option value="1">от 1980</option>
+        <option value="2">от 1990</option>
+        <option value="3">от 2000</option>
+        <option value="4">от 2010</option>
+        <option value="5">от 2020</option>
+        <option value="6">доисторические</option>
+      </select>
+
+      <label for="">Год до</label>
+      <select name="name" id="name">
+        <option disabled selected value="0">Год до</option>
+        <option value="7">до 1980</option>
+        <option value="8">до 1990</option>
+        <option value="9">до 2000</option>
+        <option value="10">до 2010</option>
+        <option value="11">до 2020</option>
+        <option value="12">машина будущего</option>
+      </select>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Состояни</legend>
+    <div>
+      <label for="">Состояние</label>
+      <select name="name" id="name" multiple>
+        <option disabled selected value="">Состояние</option>
+        <option value="1">Хлам</option>
+        <option value="2">Биток</option>
+        <option value="3">Утопленник</option>
+        <option value="4">От перекупа</option>
+        <option value="5">Нормальное</option>
+        <option value="6">Новье</option>
+      </select>
+    </div>
+  </fieldset>
 
 
 
-  Тип кузова.
-  Марка авто.
-  Страна производитель.
-  Цена (от и до).
-  Год выпуска (от и до).
   Состояние (Битая, В кредите, Нерастаможенная и тд. Одновременно может быть выбрано несколько пунктов).
   Тип топлива.
   Тип коробки передач.

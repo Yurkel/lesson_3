@@ -21,12 +21,22 @@
   <fieldset>
     <legend>Введите данные регистрации</legend>
     <form action="https://tests.fomenko.top/echo/index.php" method="get">
-      <input type="text" name="lgn" placeholder="Логин" required>
-      <input type="email" name="email" placeholder="email" required>
-      <input type="password" name="psw" placeholder="Пароль" minlength="3" maxlength="10" required>
-      <input type="password" name="psw" placeholder="Повтор пароля" minlength="3" maxlength="10" required>
+      <div>
+        <input type="text" name="lgn" placeholder="Логин" required>
+      </div>
+      <div>
+        <input type="email" name="email" placeholder="email" required>
+      </div>
+      <div>
+        <input type="password" name="psw" placeholder="Пароль" minlength="3" maxlength="10" required>
+      </div>
+      <div>
+        <input type="password" name="psw" placeholder="Повтор пароля" minlength="3" maxlength="10" required>
+      </div>
       <div>
         <button type="submit">Тачки уже тут</button>
+      </div>
+      <div>
         <button type="reset">Что-то не так</button>
       </div>
     </form>
