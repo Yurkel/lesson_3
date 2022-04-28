@@ -18,195 +18,190 @@
     <a href="">Поиск</a>
   </nav>
 
-  <fieldset>
-    <legend>Тип кузова и марка авто</legend>
-    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+    <fieldset>
+      <legend>Тип кузова и марка авто</legend>
       <div>
-        <label for="">Тип кузова</label>
-        <select name="list" id="list">
-          <option disabled selected value="0">Тип кузова</option>
-          <option value="1">Микро</option>
-          <option value="2">Хечбек</option>
-          <option value="3">Седан</option>
-          <option value="4">Универсал</option>
-          <option value="5">Внедорожник</option>
-          <option value="6">Кабриолет</option>
+        <label for="type">Тип кузова</label>
+        <select name="type" id="type">
+          <option disabled selected>Тип кузова</option>
+          <option>Микро</option>
+          <option>Хечбек</option>
+          <option>Седан</option>
+          <option>Универсал</option>
+          <option>Внедорожник</option>
+          <option>Кабриолет</option>
         </select>
       </div>
 
       <div>
-        <label for="">Марка</label>
-        <select name="list" id="list">
-          <option disabled selected value="0">Марка</option>
-          <option value="1">Audi</option>
-          <option value="2">VW</option>
-          <option value="3">Mercedes</option>
-          <option value="4">Fiat</option>
-          <option value="5">Skoda</option>
-          <option value="6">ЗАЗ</option>
+        <label for="brand">Марка</label>
+        <select name="brand" id="brand">
+          <option disabled selected>Марка</option>
+          <option>Audi</option>
+          <option>VW</option>
+          <option>Mercedes</option>
+          <option>Fiat</option>
+          <option>Skoda</option>
+          <option>ЗАЗ</option>
         </select>
       </div>
-  </fieldset>
+    </fieldset>
 
-  <fieldset>
-    <legend>Страна производитель</legend>
-    <div>
-      <input type="checkbox" id="EU" name="EU" checked>
-      <label for="EU">EU</label>
-    </div>
-    <div>
-      <input type="checkbox" id="USA" name="USA" checked>
-      <label for="USA">USA</label>
-    </div>
-    <div>
-      <input type="checkbox" id="UA" name="UA" checked>
-      <label for="UA">UA</label>
-    </div>
-  </fieldset>
+    <fieldset>
+      <legend>Страна производитель</legend>
+      <div>
+        <input type="checkbox" id="eu" name="countryeu" checked>
+        <label for="eu">EU</label>
+      </div>
+      <div>
+        <input type="checkbox" id="usa" name="countryusa" checked>
+        <label for="usa">USA</label>
+      </div>
+      <div>
+        <input type="checkbox" id="ua" name="countryua" checked>
+        <label for="ua">UA</label>
+      </div>
+    </fieldset>
 
-  <fieldset>
-    <legend>Цена</legend>
+    <fieldset>
+      <legend>Цена</legend>
+      <div>
+        <label for="pricefrom">Цена от</label>
+        <select name="pricefrom" id="pricefrom">
+          <option disabled selected>Цена от</option>
+          <option>от 1000 euro</option>
+          <option>от 2000 euro</option>
+          <option>от 3000 euro</option>
+          <option>от 4000 euro</option>
+          <option>от 5000 euro</option>
+          <option>от 6000 euro</option>
+        </select>
 
-    <div>
-      <label for="">Цена от</label>
-      <select name="list" id="list">
-        <option disabled selected value="0">Цена от</option>
-        <option value="1">от 1000 euro</option>
-        <option value="2">от 2000 euro</option>
-        <option value="3">от 3000 euro</option>
-        <option value="4">от 4000 euro</option>
-        <option value="5">от 5000 euro</option>
-        <option value="6">от 6000 euro</option>
-      </select>
+        <label for="priceto">Цена до</label>
+        <select name="pricento" id="priceto">
+          <option disabled selected>Цена до</option>
+          <option>до 2000 euro</option>
+          <option>до 3000 euro</option>
+          <option>до 4000 euro</option>
+          <option>до 5000 euro</option>
+          <option>до 6000 euro</option>
+          <option>до 7000 euro</option>
+        </select>
+      </div>
+    </fieldset>
 
-      <label for="">Цена до</label>
-      <select name="list" id="list">
-        <option disabled selected value="0">Цена до</option>
-        <option value="7">до 2000 euro</option>
-        <option value="8">до 3000 euro</option>
-        <option value="9">до 4000 euro</option>
-        <option value="10">до 5000 euro</option>
-        <option value="11">до 6000 euro</option>
-        <option value="12">до 7000 euro</option>
-      </select>
-    </div>
-  </fieldset>
+    <fieldset>
+      <legend>Год выпуска</legend>
+      <div>
+        <label for="yearfrom">Год от</label>
+        <select name="yearfrom" id="yearfrom">
+          <option disabled selected>Год от</option>
+          <option>от 1980</option>
+          <option>от 1990</option>
+          <option>от 2000</option>
+          <option>от 2010</option>
+          <option>от 2020</option>
+          <option>доисторические</option>
+        </select>
 
-  <fieldset>
-    <legend>Год выпуска</legend>
+        <label for="yearto">Год до</label>
+        <select name="yearto" id="yearto">
+          <option disabled selected>Год до</option>
+          <option>до 1980</option>
+          <option>до 1990</option>
+          <option>до 2000</option>
+          <option>до 2010</option>
+          <option>до 2020</option>
+          <option>машина будущего</option>
+        </select>
+      </div>
+    </fieldset>
 
-    <div>
-      <label for="">Год от</label>
-      <select name="list" id="list">
-        <option disabled selected value="0">Год от</option>
-        <option value="1">от 1980</option>
-        <option value="2">от 1990</option>
-        <option value="3">от 2000</option>
-        <option value="4">от 2010</option>
-        <option value="5">от 2020</option>
-        <option value="6">доисторические</option>
-      </select>
+    <fieldset>
+      <legend>Состояние авто</legend>
+      <div>
+        <label for="cond">Состояние</label>
+        <select name="condition" id="cond" multiple size="3">
+          <option disabled selected>Состояние</option>
+          <option>Хлам</option>
+          <option>Биток</option>
+          <option>Утопленник</option>
+          <option>От перекупа</option>
+          <option>Нормальное</option>
+          <option>Новье</option>
+        </select>
+      </div>
+    </fieldset>
 
-      <label for="">Год до</label>
-      <select name="list" id="list">
-        <option disabled selected value="0">Год до</option>
-        <option value="7">до 1980</option>
-        <option value="8">до 1990</option>
-        <option value="9">до 2000</option>
-        <option value="10">до 2010</option>
-        <option value="11">до 2020</option>
-        <option value="12">машина будущего</option>
-      </select>
-    </div>
-  </fieldset>
+    <fieldset>
+      <legend>Вид горючки</legend>
+      <div>
+        <input type="checkbox" id="gas" name="fuelgas" checked>
+        <label for="gas">Газ</label>
+      </div>
+      <div>
+        <input type="checkbox" id="petrol" name="fuelpetrol" checked>
+        <label for="petrol">Бензин</label>
+      </div>
+      <div>
+        <input type="checkbox" id="diesel" name="fueldiesel" checked>
+        <label for="diesel">Дизель</label>
+      </div>
+    </fieldset>
 
-  <fieldset>
-    <legend>Состояние</legend>
-    <div>
-      <label for="">Состояние</label>
-      <select name="list" id="list" multiple size="2">
-        <option disabled selected value="">Состояние</option>
-        <option value="1">Хлам</option>
-        <option value="2">Биток</option>
-        <option value="3">Утопленник</option>
-        <option value="4">От перекупа</option>
-        <option value="5">Нормальное</option>
-        <option value="6">Новье</option>
-      </select>
-    </div>
-  </fieldset>
+    <fieldset>
+      <legend>Коробка передач</legend>
+      <div>
+        <input type="checkbox" id="auto" name="transmissionauto" checked>
+        <label for="auto">Автомат</label>
+      </div>
+      <div>
+        <input type="checkbox" id="manual" name="transmissionmanual" checked>
+        <label for="manual">Механика</label>
+      </div>
+    </fieldset>
 
-  <fieldset>
-    <legend>Вид горючки</legend>
-    <div>
-      <input type="checkbox" id="Газ" name="Газ" checked>
-      <label for="Газ">Газ</label>
-    </div>
-    <div>
-      <input type="checkbox" id="Бензин" name="Бензин" checked>
-      <label for="Бензин">Бензин</label>
-    </div>
-    <div>
-      <input type="checkbox" id="Дизель" name="Дизель" checked>
-      <label for="Дизель">Дизель</label>
-    </div>
-  </fieldset>
+    <fieldset>
+      <legend>Цвет</legend>
+      <div>
+        <label for="color">Цвет</label>
+        <select name="color" id="color" multiple size="3">
+          <option disabled selected>Цвет</option>
+          <option>Металлик</option>
+          <option>Перламутр</option>
+          <option>Стандарт</option>
+        </select>
+      </div>
+    </fieldset>
 
-  <fieldset>
-    <legend>Коробка передач</legend>
-    <div>
-      <input type="checkbox" id="Автомат" name="Автомат" checked>
-      <label for="Автомат">Автомат</label>
-    </div>
-    <div>
-      <input type="checkbox" id="Механика" name="Механика" checked>
-      <label for="Механика">Механика</label>
-    </div>
-  </fieldset>
+    <fieldset>
+      <legend>Комфорт</legend>
+      <div>
+        <label for="comf">Комфорт</label>
+        <select name="comfort" id="comf" multiple size="3">
+          <option disabled selected>Комфорт</option>
+          <option>Кожа</option>
+          <option>Навигация</option>
+          <option>Круиз контроль</option>
+          <option>Пепельница</option>
+          <option>Люк</option>
+          <option>Топ комплектация</option>
+        </select>
+      </div>
+    </fieldset>
 
-  <fieldset>
-    <legend>Цвет</legend>
-    <div>
-      <label for="">Цвет</label>
-      <select name="list" id="list" multiple size="2">
-        <option disabled selected value="">Цвет</option>
-        <option value="1">Металлик</option>
-        <option value="2">Перламутр</option>
-        <option value="3">Стандарт</option>
-      </select>
-    </div>
-  </fieldset>
+    <fieldset>
+      <legend>Мы почти у цели</legend>
+      <div>
+        <button type="submit">Тачки уже тут</button>
+      </div>
+      <div>
+        <button type="reset">Что-то не так</button>
+      </div>
+    </fieldset>
 
-  <fieldset>
-    <legend>Комфорт</legend>
-    <div>
-      <label for="">Комфорт</label>
-      <select name="list" id="list" multiple size="2">
-        <option disabled selected value="">Комфорт</option>
-        <option value="1">Кожа</option>
-        <option value="2">Навигация</option>
-        <option value="3">Круиз контроль</option>
-        <option value="4">Пепельница</option>
-        <option value="5">Люк</option>
-        <option value="6">Топ комплектация</option>
-      </select>
-    </div>
-  </fieldset>
-
-  <fieldset>
-
-    <legend>Мы почти у цели</legend>
-    <div>
-      <button type="submit">Тачки уже тут</button>
-    </div>
-    <div>
-      <button type="reset">Что-то не так</button>
-    </div>
-
-    </form>
-
-  </fieldset>
-
+  </form>
 </body>
 
 </html>

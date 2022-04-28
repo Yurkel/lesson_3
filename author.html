@@ -18,30 +18,36 @@
       href="search.html">Поиск</a>
   </nav>
 
-  <fieldset>
-    <legend>Введите логин и пароль</legend>
-    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+  <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+    <fieldset>
+      <legend>Введите логин и пароль</legend>
       <div>
-        <input type="text" name="lgn" placeholder="Логин">
+        <label for="lgn">Логин</label>
+        <input id="lgn" type="text" name="lgn" placeholder="Логин">
       </div>
+
       <div>
-        <input type="email" name="email" placeholder="email">
+        <label for="email">Почта</label>
+        <input id="email" type="email" name="email" placeholder="email">
       </div>
+
       <div>
-        <input type="password" name="psw" placeholder="Пароль">
+        <label for="password">Пароль</label>
+        <input id="password" type="password" name="psw" placeholder="Пароль">
+        <label for="rempas">Запомнить пароль</label>
+        <input id="rempas" type="checkbox" name="rempas" checked>
       </div>
+
       <div>
         <input type="submit" value="Тачки уже тут">
       </div>
+
       <div>
         <button type="reset">Что-то не так</button>
       </div>
-      <div>
-        <input type="checkbox" id="Запомнить" name="Запомнить пароль" checked>
-        <label for="Запомнить">Запомнить пароль</label>
-      </div>
-    </form>
-  </fieldset>
+    </fieldset>
+  </form>
 
 </body>
 
